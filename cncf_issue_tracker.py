@@ -30,20 +30,18 @@ try:
 except ImportError:
     # Fallback configuration if config.py doesn't exist
     REPOSITORIES = [
-        "prometheus/prometheus",
-        "prometheus/client_golang",
+        "open-telemetry/opentelemetry.io",
         "open-telemetry/opentelemetry-collector-contrib",
-        "prometheus/docs",
-        "envoyproxy/gateway",
-        "envoyproxy/envoy",
-        "jaegertracing/jaeger",
-        "jaegertracing/jaeger-operator",
-        "jaegertracing/helm-charts",
-        "jaegertracing/documentation",
-        "jaegertracing/jaeger-ui",
-        "cilium/cilium.io",
-        "cilium/cilium",
-        "cilium/hubble-ui"
+        "open-telemetry/opentelemetry-demo",
+        "open-telemetry/opentelemetry-specification",
+        "open-telemetry/community",
+        "meshery/meshery",
+        "meshery/meshery.io",
+        "layer5io/docs",
+        "kubernetes/website",
+        "kubernetes/community",
+        "kubernetes-sigs/contributor-playground",
+        "kubernetes/enhancements"
     ]
     DEFAULT_CHECK_INTERVAL = 180
     DATABASE_PATH = "cncf_issues.db"
@@ -447,4 +445,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
